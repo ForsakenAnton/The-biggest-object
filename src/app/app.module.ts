@@ -2,10 +2,12 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
+import { TheBiggestObjectComponent } from './the-biggest-object/the-biggest-object.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    TheBiggestObjectComponent
   ],
   imports: [
     BrowserModule

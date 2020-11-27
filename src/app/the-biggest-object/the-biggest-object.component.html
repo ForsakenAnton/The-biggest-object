@@ -1,0 +1,20 @@
+
+<p *ngFor="let item of objects">
+    {{item}}
+</p>
+
+<hr/>
+
+<div *ngIf="selectedItem">
+    <div [ngSwitch]="selectedItem">
+        <p *ngSwitchCase="'1'">{{objects[0]}}</p>
+        <p *ngSwitchCase="'2'">{{objects[1]}}</p>
+        <p *ngSwitchCase="'3'">{{objects[2]}}</p>
+    </div>
+</div>
+
+<div>
+    <span><button (click)="onChange(1)">Show auto</button></span>
+    <span><button (click)="onChange(2)">Show plane</button></span>
+    <span><button (click)="onChange(3)">Show ship</button></span>
+</div>
