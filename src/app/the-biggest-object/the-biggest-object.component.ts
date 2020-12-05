@@ -11,7 +11,7 @@ export class TheBiggestObjectComponent implements OnInit {
 
   objects: string[];
   objectName: string;
-  selectedItem: number;
+  selectedItem: number; 
   //private objectsDataService: TheBiggestObjectDataService;
 
   constructor(private objectsDataService: TheBiggestObjectDataService) {
